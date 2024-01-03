@@ -13,17 +13,9 @@ provider "aws" {
   region = "us-east-1"
 }
 
-resource "aws_subnet" "example" {
-  vpc_id        = data.aws_vpc.default.vpc_id
-  cidr_block    = "10.0.1.0/24"
-
-  tags = {
-    Name = "my-subnet"
-  }
-}
-
 resource "aws_instance" "app_server" {
-  ami           = "ami-830c94e3"
+  #ami           = "ami-830c94e3"
+  ami           = "ami-0c460fdf6a8a1edef"
   instance_type = "t2.micro"
 
   tags = {
