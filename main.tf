@@ -15,7 +15,9 @@ provider "aws" {
 }
 
 resource "aws_instance" "app_server" {  # resource type (aws_instance) and resource name (app_server)
-  ami = "ami-0688ba7eeeeefe3cd"         # AWS ami finder: https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/finding-an-ami.html#finding-quick-start-ami
+# AWS ami finder: https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/finding-an-ami.html#finding-quick-start-ami
+  #ami = "ami-0688ba7eeeeefe3cd"         
+  ami = "ami-830c94e3"
   instance_type = "t2.micro"
 
   tags = {
