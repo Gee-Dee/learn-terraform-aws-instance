@@ -12,7 +12,7 @@ terraform {
 terraform {
   backend "s3" {
     bucket = "bucketjddc"
-    key    = "tfstates/dev/terraform.tfstate"
+    key    = "tfstates/stg/terraform.tfstate"
     region = "us-west-2"
   }
 }
