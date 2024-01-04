@@ -1,9 +1,9 @@
 variable "vm_tags" {
   type = map(string)
   default = {
-    Name  = "dev01"
-    env   = "dev"
-    name  = "devapp01"
+    Name  = "stg01"
+    env   = "stg"
+    name  = "stgapp01"
   }
 }
 
