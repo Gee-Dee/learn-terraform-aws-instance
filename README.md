@@ -1,3 +1,7 @@
+Directories:
+tutorial - contains the actual tutorial
+dev, stg, prd directories - are directories containing environments for exercises in Terraform.
+
 Exercises in Terraform with AWS:
   1. https://developer.hashicorp.com/terraform/tutorials/aws-get-started/aws-build 
   2. https://developer.hashicorp.com/terraform/language
